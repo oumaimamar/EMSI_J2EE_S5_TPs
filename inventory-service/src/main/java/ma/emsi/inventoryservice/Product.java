@@ -4,8 +4,9 @@ import lombok.*;
 import jakarta.persistence.*;
 
 @Entity @Data @NoArgsConstructor
-@AllArgsConstructor @ToString
-class Product{
+@AllArgsConstructor
+//@ToString
+public class Product{
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
